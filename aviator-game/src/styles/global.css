@@ -1,0 +1,210 @@
+/* 🌍 Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 🔝 Header */
+header {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.wallet i {
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+.wallet:hover {
+    color: #ff5722;
+}
+
+/* 🎮 Game Container */
+.midcom {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+    padding: 20px;
+}
+
+/* 🎰 Betting Table */
+.betting-table {
+    background-color: #111827;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.betting-table th, .betting-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.betting-table th {
+    background-color: #1b1d36;
+    color: #f79f64;
+}
+
+/* 🚀 Crash Game */
+.crash-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #181c3a;
+    border-radius: 10px;
+}
+
+.countdown-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+#multiplier-value {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    opacity: 0.7;
+}
+
+/* 🏆 History Section */
+.history-container {
+    background-color: #2b2b2b;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.history-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.history-table th {
+    background-color: #1b1d36;
+    color: #f79f64;
+}
+
+/* 🎯 Stake Panel */
+.stake-container {
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stake-container input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.number-button {
+    background-color: #414363;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.number-button:hover {
+    background-color: #f79f64;
+}
+
+/* 📱 Mobile Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .midcom {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .countdown-display {
+        font-size: 40px;
+    }
+
+    #multiplier-value {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .history-container, .stake-container, .betting-table {
+        width: 100%;
+    }
+
+    .countdown-display {
+        font-size: 30px;
+    }
+
+    #multiplier-value {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .countdown-display {
+        font-size: 24px;
+    }
+
+    #multiplier-value {
+        font-size: 20px;
+    }
+
+    .betting-table th, .betting-table td {
+        font-size: 12px;
+    }
+
+    .history-table th, .history-table td {
+        font-size: 12px;
+    }
+
+    .number-button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

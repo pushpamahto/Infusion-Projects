@@ -1,0 +1,27 @@
+/* 🎯 Stake Panel */
+.stake-container {
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stake-container input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.number-button {
+    background-color: #414363;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.number-button:hover {
+    background-color: #f79f64;
+}

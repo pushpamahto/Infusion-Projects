@@ -1,0 +1,30 @@
+/* 🎮 Main Game Layout */
+.midcom {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+    padding: 20px;
+}
+
+/* 🎰 Betting Table */
+.betting-table {
+    background-color: #111827;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.betting-table th, .betting-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.betting-table th {
+    background-color: #1b1d36;
+    color: #f79f64;
+}
